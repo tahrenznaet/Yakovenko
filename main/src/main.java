@@ -48,7 +48,5 @@ public class main {
         for (int q = 0; q < answers.length; q++) {
             System.out.println(answers[q]);
         }
-
-
     }
 }
