@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -96,12 +97,21 @@ public class testRandom {
         i = 0;
         b = 0;
 
-        for (i = 0; i <= answersQuestions[1].length; i++) {
-            for (b = 0; b <= answersQuestions[1].length - 1; b++) {
-
+        int[] answersCount = new int[] {1, 2, 3, 4};
+        for (i = 0; i <= answersQuestions[0].length; i++) {
+            Random rnd = new Random();
+            for (i = 1; i < answersCount.length; i++) {
+                int j = rnd.nextInt(i);
+                int temp = answersCount[i];
+                answersCount[i] = answersCount[j];
+                answersCount[j] = temp;
             }
         }
         i = 0;
         b = 0;
+
+        for (i = 0; i <= answersCount.length; i++) {
+            System.out.println(answersCount);
+        }
     }
 }
