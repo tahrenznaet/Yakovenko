@@ -73,13 +73,12 @@ public class testRandom {
 
         // create queue of answer and question
         for (i = 0; i < answersQueue.size(); i++){
-            if (i == 5) {
-                break;
-            }
             if (i == 1) {
                 answersQuestions[0][i] = questionsQueue.peek();
-            } else {
+            } else if (i < 5){
                 answersQuestions[0][i] = answersQueue.peek();
+            } else {
+                break;
             }
         }
         i = 0;
