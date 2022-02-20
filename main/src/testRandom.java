@@ -13,8 +13,8 @@ public class testRandom {
         Queue<String> answersQueue = new LinkedList<>(); // queue of question
         String[][] allAnswAllQuest = new String[1][60];  // array of all question and all answers
         String[][] answersQuestions = new String[1][5]; // array of 1 question and 4 answers
-        String[] questions = new  String[12]; // array of questions
-        String[] answers = new String[12]; // array of answers
+        String[] questions = new  String[1]; // array of questions
+        String[] answers = new String[4]; // array of answers
 
         // question array + question Queue
         while (scan.hasNextLine()) {
