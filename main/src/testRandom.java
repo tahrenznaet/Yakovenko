@@ -5,8 +5,8 @@ import java.util.Queue;
 
 public class testRandom {
     public static void main(String[] args) {
-        Queue<String> questionsQueue = new LinkedList<>(); //
-        Queue<String> answersQueue = new LinkedList<>(); //
+        Queue<String> questionsQueue = new LinkedList<>(); // queue of question
+        Queue<String> answersQueue = new LinkedList<>(); // queue of question
         int i = 0;
         int b = 0;
         int u = 0;
@@ -20,8 +20,8 @@ public class testRandom {
         while (scan.hasNextLine()) {
             String question = scan.nextLine();
             i++;
-            questions[b] = question;
-            questionsQueue.add(question);
+            questions[b] = question; // array
+            questionsQueue.add(question); // queue
             b++;
             if (i >=questions.length) {
                 i = 0;
@@ -45,14 +45,13 @@ public class testRandom {
         System.out.println("--------------");
 
 
+        // answer array + answer Queue
         while (scan.hasNextLine()) {
             String answer = scan.nextLine();
             i++;
-            answers[b] = answer;
-            answersQueue.add(answer);
+            answers[b] = answer; // array
+            answersQueue.add(answer); // queue
             b++;
-            System.out.println(answer);
-            //System.out.println("------------");
             if (i >=answers.length) {
                 i = 0;
                 b = 0;
