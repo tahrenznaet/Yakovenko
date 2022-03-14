@@ -17,6 +17,7 @@ public class testRandom {
         String[] questions = new  String[1]; // array of questions
         String[] answers = new String[4]; // array of answers
 
+
         for () {
             Scanner scan = new Scanner(System.in);
 
